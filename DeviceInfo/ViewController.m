@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "DeviceHelper.h"
-#import "DeviceUtil.h"
+
 
 @interface ViewController ()
 
@@ -32,8 +32,8 @@
     NSLog(@"总磁盘空间%@", [DeviceHelper getTotalDiskSize]);
     NSLog(@"可用磁盘空间%@", [DeviceHelper getAvailableDiskSize]);
     
-    NSLog(@"%@", [DeviceHelper getUDID]);
-    NSLog(@"%@",NSStringFromCGSize([DeviceUtil backCameraStillImageResolutionInPixels]));
+    NSLog(@"UUID%@", [DeviceHelper getUDID]);
+
     
     // Do any additional setup after loading the view, typically from a nib.
 }
